@@ -1,0 +1,38 @@
+*{
+  font-family: "Nunito", Montserrat, sans-serif !important;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  text-align: center;
+}
+
+.title{
+  padding-top: 0.5rem;
+  height: 4rem;
+  position: relative;
+  margin: 1rem;
+  background-color: #cccccc;
+  border: #bbbbbb 0.2rem solid;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 0.03rem;
+  -webkit-text-stroke-color: #000000;
+}
+
+table tr th, table tr td {
+  border: #bbbbbb 0.2rem solid !important;
+  vertical-align: middle !important;
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.datetime {
+  background-color: rgba(191, 191, 191, 0.1);
+}
+
+.td-description {
+  text-align: left;
+}

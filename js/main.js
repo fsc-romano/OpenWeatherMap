@@ -18,6 +18,7 @@ $(document).ready(function() {
     $("#title").html(weatherData.city.name + ", " + weatherData.city.country);
   
     for (var x = 0; x < weatherData.cnt; x++) {
+
       var weatherDisplay = $('#tr' + (x + 1))[0];
 
       $(weatherDisplay).html( "<th class='datetime'>" + cnvDate(weatherData.list[x].dt) + "</th>"
@@ -31,15 +32,18 @@ $(document).ready(function() {
   }
 
   function cnvTemp(tempWeather) {
+
     return (parseInt(tempWeather) * 9/5) + 32;
   }
 
   function cnvDate(jsonDate) {
+
     var date = new Date(jsonDate * 1000);
     return date.toString().substring(0, 16);
   }
 
   function cnvTime(jsonTime) {
+
     return jsonTime.substring(16, 10);
   }
 });

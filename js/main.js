@@ -16,7 +16,7 @@ $(document).ready(function() {
   function displayWeather(weatherData){
 
     $("#title").html(weatherData.city.name + ", " + weatherData.city.country);
-  
+
     for (var x = 0; x < weatherData.cnt; x++) {
 
       var weatherDisplay = $('#tr' + (x + 1))[0];

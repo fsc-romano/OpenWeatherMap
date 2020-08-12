@@ -36,3 +36,9 @@ table tr th, table tr td {
 .td-description {
   text-align: left;
 }
+
+@media only screen and (max-width: 470px) {
+  table {
+    font-size: 3vw;
+  }
+}
